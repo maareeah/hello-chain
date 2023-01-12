@@ -1,4 +1,6 @@
 version: 1
+genesis:
+  chain_id: "foobar"
 accounts:
 - name: alice
   coins:
