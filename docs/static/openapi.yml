@@ -11655,6 +11655,12 @@ definitions:
                   "@type": "type.googleapis.com/google.protobuf.Duration",
                   "value": "1.212s"
                 }
+  hello.hello.MsgCreatePostResponse:
+    type: object
+    properties:
+      id:
+        type: string
+        format: uint64
   hello.hello.Params:
     type: object
     description: Params defines the parameters for the module.

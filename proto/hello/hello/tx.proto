@@ -1,7 +1,21 @@
 syntax = "proto3";
+
 package hello.hello;
 
 option go_package = "hello/x/hello/types";
 
 // Msg defines the Msg service.
-service Msg {}
+service Msg {
+  rpc CreatePost (MsgCreatePost) returns (MsgCreatePostResponse);
+}
+message MsgCreatePost {
+  string creator = 1;
+  string title   = 2;
+  string body    = 3;
+  string date    = 4;
+}
+
+message MsgCreatePostResponse {
+  uint64 id = 1;
+}
+
